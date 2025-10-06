@@ -37,7 +37,9 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2">
           <div className="h-7 w-7 rounded-md bg-accent/20 ring-1 ring-accent/40" />
-          <span className="text-lg font-extrabold tracking-tight text-foreground">MagmAI</span>
+          <span className="text-lg font-extrabold tracking-tight text-foreground">
+            MagmAI
+          </span>
         </Link>
 
         <nav className="hidden md:block">{NavLinks}</nav>
@@ -62,7 +64,12 @@ export function Header() {
             </button>
           </div>
 
-          <Button asChild variant="default" size="sm" className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button
+            asChild
+            variant="default"
+            size="sm"
+            className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90"
+          >
             <a href="#contact" aria-label={t.hero.ctaSecondary}>
               <Mail className="h-4 w-4" />
               <span>{t.hero.ctaSecondary}</span>
@@ -71,14 +78,22 @@ export function Header() {
 
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Menü">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="md:hidden"
+                aria-label="Menü"
+              >
                 <Menu />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-80">
               <div className="mt-8 space-y-6">
                 {NavLinks}
-                <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                <Button
+                  asChild
+                  className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
+                >
                   <a href="#contact" aria-label={t.hero.ctaSecondary}>
                     <Mail className="h-4 w-4" />
                     <span>{t.hero.ctaSecondary}</span>

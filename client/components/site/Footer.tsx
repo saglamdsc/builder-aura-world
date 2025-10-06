@@ -8,16 +8,24 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">{t.footer.copyright}</p>
         <ul className="flex items-center gap-4 text-sm text-muted-foreground">
           <li>
-            <a className="hover:text-foreground" href="#about">{t.nav.about}</a>
+            <a className="hover:text-foreground" href="#about">
+              {t.nav.about}
+            </a>
           </li>
           <li>
-            <a className="hover:text-foreground" href="#solutions">{t.nav.solutions}</a>
+            <a className="hover:text-foreground" href="#solutions">
+              {t.nav.solutions}
+            </a>
           </li>
           <li>
-            <a className="hover:text-foreground" href="#services">{t.nav.services}</a>
+            <a className="hover:text-foreground" href="#services">
+              {t.nav.services}
+            </a>
           </li>
           <li>
-            <a className="hover:text-foreground" href="#contact">{t.nav.contact}</a>
+            <a className="hover:text-foreground" href="#contact">
+              {t.nav.contact}
+            </a>
           </li>
         </ul>
       </div>

@@ -17,8 +17,7 @@ export const translations: Record<Lang, any> = {
     },
     about: {
       title: "MagmAI Hakkında",
-      body:
-        "Jeoloji ve yapay zekayı bir araya getirerek gerçek zamanlı yeraltı içgörüleri sunuyoruz. Hedefimiz, yorumlamayı daha hızlı, daha akıllı ve saha operasyonlarına daha bağlı hale getirmek.",
+      body: "Jeoloji ve yapay zekayı bir araya getirerek gerçek zamanlı yeraltı içgörüleri sunuyoruz. Hedefimiz, yorumlamayı daha hızlı, daha akıllı ve saha operasyonlarına daha bağlı hale getirmek.",
       features: ["Jeoloji", "Yapay Zeka", "Veri"],
     },
     solutions: {
@@ -85,8 +84,7 @@ export const translations: Record<Lang, any> = {
     },
     about: {
       title: "About MagmAI",
-      body:
-        "We combine geology and AI to deliver real-time subsurface insights. Our goal is to make interpretation faster, smarter, and more connected to field operations.",
+      body: "We combine geology and AI to deliver real-time subsurface insights. Our goal is to make interpretation faster, smarter, and more connected to field operations.",
       features: ["Geology", "AI", "Data"],
     },
     solutions: {
@@ -110,7 +108,8 @@ export const translations: Record<Lang, any> = {
     },
     services: {
       title: "On-Site Services",
-      subtitle: "Accurate and fast assessment with AI-assisted field geologists",
+      subtitle:
+        "Accurate and fast assessment with AI-assisted field geologists",
       cta: "Get a quote",
       items: [
         {

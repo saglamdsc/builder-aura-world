@@ -15,7 +15,9 @@ const NotFound = () => {
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="text-center">
         <h1 className="text-5xl font-extrabold mb-2 text-foreground">404</h1>
-        <p className="text-base text-muted-foreground mb-6">Aradığınız sayfa bulunamadı.</p>
+        <p className="text-base text-muted-foreground mb-6">
+          Aradığınız sayfa bulunamadı.
+        </p>
         <a href="/" className="text-accent hover:opacity-90 underline">
           Ana sayfaya dön
         </a>
