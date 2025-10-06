@@ -11,14 +11,11 @@ export default function Index() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-20 md:py-28">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border bg-secondary/60 px-3 py-1 text-xs font-medium text-secondary-foreground">
-                Minimal, hızlı ve etkileşimli web deneyimi
-              </div>
               <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-                Enerji ve Keşif için Yapay Zeka Çözümleri
+                Jeolojik Veriden Yapay Zeka Destekli Çözümlere
               </h1>
               <p className="mt-4 max-w-prose text-base leading-relaxed text-muted-foreground">
-                MagmAI; jeoloji, veri ve yapay zekayı birleştirerek yeraltı içgörülerini açığa çıkarır. Bu örnek site, butonları linkler ile çalışan modern ve minimal bir deneyim sunar.
+                MagmAI, jeolojik ve sondaj verilerini gelişmiş yapay zekâ algoritmalarıyla analiz eder. Gerçek zamanlı yeraltı modellemeleriyle petrol, gaz ve jeotermal sektörlerinde operasyonel verimliliği artırır.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
