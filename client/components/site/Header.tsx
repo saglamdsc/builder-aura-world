@@ -4,15 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Menu, Mail } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-const NAV = [
-  { href: "#about", label: "Hakkımızda" },
-  { href: "#solutions", label: "Çözümler" },
-  { href: "#services", label: "Hizmetler" },
-  { href: "#contact", label: "İletişim" },
-];
-
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { lang, setLang, t } = useLanguage();
+
+  const NAV = [
+    { href: "#about", label: t.nav.about },
+    { href: "#solutions", label: t.nav.solutions },
+    { href: "#services", label: t.nav.services },
+    { href: "#contact", label: t.nav.contact },
+  ];
 
   const NavLinks = (
     <ul className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
@@ -41,10 +42,29 @@ export function Header() {
         <nav className="hidden md:block">{NavLinks}</nav>
 
         <div className="flex items-center gap-2">
+          {/* Language toggle */}
+          <div className="flex items-center gap-2 rounded-md border bg-card p-1">
+            <button
+              onClick={() => setLang("tr")}
+              className={`px-2 py-1 text-xs font-medium rounded ${lang === "tr" ? "bg-accent text-accent-foreground" : "text-foreground/70"}`}
+              aria-label="Türkçe"
+            >
+              TR
+            </button>
+            <span className="text-xs text-muted-foreground">·</span>
+            <button
+              onClick={() => setLang("en")}
+              className={`px-2 py-1 text-xs font-medium rounded ${lang === "en" ? "bg-accent text-accent-foreground" : "text-foreground/70"}`}
+              aria-label="English"
+            >
+              EN
+            </button>
+          </div>
+
           <Button asChild variant="default" size="sm" className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href="#contact" aria-label="İletişime Geç">
+            <a href="#contact" aria-label={t.hero.ctaSecondary}>
               <Mail className="h-4 w-4" />
-              <span>İletişime Geç</span>
+              <span>{t.hero.ctaSecondary}</span>
             </a>
           </Button>
 
@@ -58,9 +78,9 @@ export function Header() {
               <div className="mt-8 space-y-6">
                 {NavLinks}
                 <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                  <a href="#contact" aria-label="İletişime Geç (Mobil)">
+                  <a href="#contact" aria-label={t.hero.ctaSecondary}>
                     <Mail className="h-4 w-4" />
-                    <span>İletişime Geç</span>
+                    <span>{t.hero.ctaSecondary}</span>
                   </a>
                 </Button>
               </div>
