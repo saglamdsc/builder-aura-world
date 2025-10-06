@@ -141,7 +141,13 @@ export default function Index() {
                 </Button>
               </div>
             </div>
-            <div className="mx-auto h-40 w-40 md:h-56 md:w-56 rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-primary/10 to-transparent" />
+            <div className="mx-auto h-40 w-40 md:h-56 md:w-56 rounded-2xl overflow-hidden border-2 border-primary/30 bg-transparent">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Ff25098e715d24655997d74609b3f9b97%2F7da3e75a0297418f866a87c3562eb9f6?format=webp&width=800"
+                alt="Field geologist illustration"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
