@@ -38,6 +38,7 @@ export const translations: Record<Lang, any> = {
           desc: "Rezervuar analizi ve kaçak tespiti için ileri gaz analitiği",
         },
       ],
+      cta: "Detay ve Demo İste",
     },
     services: {
       title: "Saha Hizmetleri",
@@ -104,6 +105,7 @@ export const translations: Record<Lang, any> = {
           desc: "Advanced gas chromatography analytics for reservoir and leak detection",
         },
       ],
+      cta: "Request demo & details",
     },
     services: {
       title: "On-Site Services",
