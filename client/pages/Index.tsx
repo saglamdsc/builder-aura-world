@@ -112,7 +112,7 @@ export default function Index() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild variant="link" className="px-0 text-accent">
-                    <a href="#contact">Teklif Al</a>
+                    <a href="#contact">{t.services.cta}</a>
                   </Button>
                 </CardContent>
               </Card>
