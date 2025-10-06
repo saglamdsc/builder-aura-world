@@ -43,6 +43,7 @@ export const translations: Record<Lang, any> = {
     services: {
       title: "Saha Hizmetleri",
       subtitle: "Deneyimli kuyu jeologları ile sahada, profesyonel destek",
+      cta: "Teklif Al",
       items: [
         {
           title: "Saha Jeolog Desteği",
