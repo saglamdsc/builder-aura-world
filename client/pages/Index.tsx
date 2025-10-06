@@ -32,12 +32,11 @@ export default function Index() {
               </div>
             </div>
             <div className="relative flex justify-center">
-              <div className="mx-auto h-56 w-56 md:h-72 md:w-72">
+              <div className="mx-auto h-56 w-56 md:h-72 md:w-72 bg-[hsl(var(--background))]">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2Ff25098e715d24655997d74609b3f9b97%2F87303222380a4061b669438b8495694f?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2Ff25098e715d24655997d74609b3f9b97%2F7b167d2ebceb46df9950c7554899d1fb?format=webp&width=800"
                   alt="MagmAI logo"
-                  className="h-full w-full object-contain bg-transparent"
-                  style={{ background: "transparent" }}
+                  className="h-full w-full object-contain"
                 />
               </div>
             </div>
