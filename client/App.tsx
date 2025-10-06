@@ -21,7 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         {/* Language provider wraps the whole app so header/pages can access translations */}
-        <React.Suspense>
+        <LanguageProvider>
           <Layout>
             <Routes>
               <Route path="/" element={<Index />} />
@@ -29,7 +29,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
-        </React.Suspense>
+        </LanguageProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
