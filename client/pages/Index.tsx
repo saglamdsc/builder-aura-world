@@ -119,7 +119,7 @@ export default function Index() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16 md:py-24">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground">Saha Hizmetleri</h2>
-            <p className="mt-3 text-muted-foreground">AI destekli saha jeologlar��yla doğru ve hızlı değerlendirme</p>
+            <p className="mt-3 text-muted-foreground">Deneyimli kuyu jeologları ile sahada, profesyonel destek</p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {[
