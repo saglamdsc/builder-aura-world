@@ -111,6 +111,7 @@ export const translations: Record<Lang, any> = {
     services: {
       title: "On-Site Services",
       subtitle: "Accurate and fast assessment with AI-assisted field geologists",
+      cta: "Get a quote",
       items: [
         {
           title: "Wellsite Geologist Support",
